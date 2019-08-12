@@ -29,13 +29,7 @@ You will also see any lint errors in the console.
 - [components](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components), which includes the components. See below
 
 ### [/src/components](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components)
-- [Navbar.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/Navbar.js), navigation bar that includes 6 tabs:
-  - Home
-  - SVG
-  - Gene SVG
-  - tRNA SVG
-  - Tree SVG
-  - rRNA SVG
+- [Navbar.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/Navbar.js), navigation bar that controls the rendering of the following components
 - [Home.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/Home.js), home page and also landing page for the app
 - [SVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/SVG.js), a visualization tool for mitochondrial DNA. Allows for 3 types of user input:
   - Mitochondrial gene name
