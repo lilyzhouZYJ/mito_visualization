@@ -1,4 +1,4 @@
-This repository includes various dynamic visualizations that were implemented in the mito browser. As the mito browser was implemented in a React environment, this project uses React as well.
+This repository includes various dynamic visualizations that were implemented in the mito browser. As the mito browser was implemented in a React environment, this project uses React as well. The folder [LinearGeneSVG_nonreact](https://github.com/lilyzhouZYJ/mito_visualization/tree/master/LinearGeneSVG_nonreact) is the only folder that is not implemented in React.
 
 ## Prerequisites
 
@@ -18,6 +18,12 @@ You will also see any lint errors in the console.
 
 ## Contents
 
+### [/LinearGeneSVG_nonreact](https://github.com/lilyzhouZYJ/mito_visualization/tree/master/LinearGeneSVG_nonreact)
+
+- This folder includes the visualization of mitochondrial DNA in a linear form, and it is not implemented in React.
+- [LinearGene.svg](https://github.com/lilyzhouZYJ/mito_visualization/blob/master/LinearGeneSVG_nonreact/LinearGene.svg), the svg file for the visualization
+- [LinearGene_nonreact](https://github.com/lilyzhouZYJ/mito_visualization/blob/master/LinearGeneSVG_nonreact/LinearGene_nonreact.html), the html file with JavaScript that creates the visualization in svg
+
 ### [/public](https://github.com/lilyzhouZYJ/mito_browser/tree/master/public)
 
 - [index.html](https://github.com/lilyzhouZYJ/mito_browser/blob/master/public/index.html) is the html that is rendered onto the webpage and contains the root div (`<div id="root">`)
@@ -36,7 +42,8 @@ You will also see any lint errors in the console.
   - Genetic variant
   - Start and end coordinates of a deletion
   Respectively, the tool will highlight either the gene, the variant location, or the deletion region.
-- *[GeneSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/GeneSVG.js), also provides visualization for mitochondrial DNA. Dynamic based on props passed from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js) but not interactive.
+- [LinearSVG.js](https://github.com/lilyzhouZYJ/mito_visualization/blob/master/src/components/LinearSVG.js), visualization of mitochondrial DNA in a linear form. Does not include highlighting functions.
+- *[GeneSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/GeneSVG.js), visualization for mitochondrial DNA in circular form. Dynamic based on props passed from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js) but not interactive.
 - *[TrnaSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/TrnaSVG.js), visualization of tRNA secondary structure. Also highlights variant base.
   - The components for each tRNA is in the folder [tRNA](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components/tRNA)
 - *[TreeSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/TreeSVG.js), visualization of haplotype tree. Highlights branches based on the haplotypes of variant. The stroke width of highlight changes based on the allele frequency of each haplotype.
