@@ -3,12 +3,12 @@ This repository includes various dynamic visualizations that were implemented in
 ## Prerequisites
 
 - [npm](https://www.npmjs.com/), which is required for create-react-app
-- [Create React App](https://github.com/facebook/create-react-app), which can be installed with the command: `npm install create-react-app`
+- [React](https://reactjs.org/) environment using either [CDN](https://reactjs.org/docs/cdn-links.html) or [Create React App](https://github.com/facebook/create-react-app), which can be installed with the command: `npm install create-react-app`
 - The app also uses [React Router](https://reacttraining.com/react-router/), which can be installed with `npm install react-router-dom`
 
 ## Getting Started
 
-A React app can be created with `npx create-react-app mito_browser`.
+If using Create React App, a React app can be created with `npx create-react-app mito_browser`.
 
 In the project directory, start the app in development mode using `npm start`.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -46,4 +46,4 @@ You will also see any lint errors in the console.
   - The js files with "-orig" in their names are the zoomed-out pictures that show the entire structure
 - [/styles](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components/styles) includes styling for specific components
 
-**Note**: all js files with "SVG" in their names (those marked with *) are dynamic based on the props passed onto them from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js)
+**Note**: all js files marked with * are dynamic based on the props passed onto them from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js). The props can be edited in App.js.
