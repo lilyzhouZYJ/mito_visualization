@@ -397,14 +397,6 @@ class SVG extends React.Component{
             var svgnode = document.getElementById("circle"); 
             svgnode.insertBefore(line, svgnode.childNodes[svgnode.childNodes.length-1]);
 
-            // find gene that matches the variant is in
-            // var matchedGenes = [];
-            // for (const [key, value] of Object.entries(dict)) {
-            //     if(varPos>=value[0]&&varPos<=value[1]){
-            //         matchedGenes.push(key);
-            //     }
-            // }
-
             //add text label for variant
             var textNode = document.createElementNS('http://www.w3.org/2000/svg','text');
             var node1 = document.createElementNS('http://www.w3.org/2000/svg','tspan');
@@ -412,12 +404,6 @@ class SVG extends React.Component{
             node1.appendChild(text);
             textNode.appendChild(node1);
 
-            // //gene label
-            // var node2 = document.createElementNS('http://www.w3.org/2000/svg','tspan');
-            // var geneText = document.createTextNode('Gene: '+matchedGenes);
-            // node2.appendChild(geneText);
-            // textNode.appendChild(node2);
-            
             if(varPos>16569/2){
                 textNode.setAttribute('text-anchor','start');
                 textNode.setAttribute('x',pt2x+5);
