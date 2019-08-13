@@ -517,7 +517,7 @@ class SVG extends React.Component{
 
                     <p>Highlighting Variant</p>
                     <form onSubmit={this.handleSubmitVar}>
-                        <label htmlFor="var-pos">Input variant position</label>
+                        <label htmlFor="var-pos">Input variant ID</label>
                         <input type="text" id="var-pos"></input>
                         <button type="submit">Submit</button>
                     </form>
