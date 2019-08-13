@@ -46,4 +46,4 @@ You will also see any lint errors in the console.
   - The js files with "-orig" in their names are the zoomed-out pictures that show the entire structure
 - [/styles](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components/styles) includes styling for specific components
 
-**Note**: all js files with "SVG" in their names (those marked with *) are dynamic based on the props passed onto them from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js)
+**Note**: all js files with "SVG" in their names (those marked with *) are dynamic based on the props passed onto them from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js). The props can be edited in App.js.
