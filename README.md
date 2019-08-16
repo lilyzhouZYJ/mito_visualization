@@ -43,6 +43,7 @@ You will also see any lint errors in the console.
   - Start and end coordinates of a deletion
   Respectively, the tool will highlight either the gene, the variant location, or the deletion region.
   The Google Sign-In feature is also implemented on this page, but since Google only authorize actual domains or localhost (does not allow IPs), this feature has only been tested locally. To still use the tool on a server, comment out all the code related to Google Sign-In.
+- [TrnaTool.js](https://github.com/lilyzhouZYJ/mito_visualization/blob/master/src/components/TrnaTool.js), a visualization tool that allows users to input a variant, and it will highlight the variant in ithe respective tRNA. [Currently Not Working]
 - [LinearSVG.js](https://github.com/lilyzhouZYJ/mito_visualization/blob/master/src/components/LinearSVG.js), visualization of mitochondrial DNA in a linear form. Does not include highlighting functions.
 - *[GeneSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/GeneSVG.js), visualization for mitochondrial DNA in circular form. Dynamic based on props passed from [App.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/App.js) but not interactive.
 - *[TrnaSVG.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/TrnaSVG.js), visualization of tRNA secondary structure. Also highlights variant base.
