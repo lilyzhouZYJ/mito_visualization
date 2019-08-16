@@ -55,6 +55,7 @@ class GeneTool extends React.Component{
         isLoggedIn: "false"
     }
     
+    //converts from polar system to cartesian coordinates
     polarToCartesian(centerX, centerY, radius, angleInDegrees) {
         var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
         return {
@@ -65,7 +66,6 @@ class GeneTool extends React.Component{
 
     componentDidUpdate(){
 
-        //console.log("add color?"+this.state.isLoggedIn);
         if(this.state.isLoggedIn==="true"){
 
             var cx = this.state.cx;       //x coordinate of circle center
@@ -502,19 +502,16 @@ class GeneTool extends React.Component{
 
     }
 
+    //set state isLoggedIn to true when the user logs in
     setIsLoggedIn = (isLoggedIn) => {
         console.log("isloggedin:"+isLoggedIn);
         //var isloggedin = window.gapi.auth2.getAuthInstance().isSignedIn.get()
         this.setState({
             isLoggedIn: isLoggedIn
         })
-        console.log("current state:"+this.state.isLoggedIn);
-        //this.forceUpdate();
-        //console.log("isloggedin:"+isloggedin);
     }
 
     render() {
-        console.log("current state:"+this.state.isLoggedIn);
         if(this.state.isLoggedIn==="false"){
             return(
                 <Signin setIsLoggedIn={this.setIsLoggedIn}/>
