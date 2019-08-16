@@ -359,6 +359,7 @@ class LinearSVG extends React.Component {
                         <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
                     </filter>
                 </svg>
+                
 
             </div>
         )

@@ -22,6 +22,7 @@ import Mttn from './tRNA/MT-TN';
 import Mttm from './tRNA/MT-TM';
 import Mttr from './tRNA/MT-TR';
 
+//match each gene to its respective component
 const components = {
     'MT-TA': Mtta,
     'MT-TT': Mttt,

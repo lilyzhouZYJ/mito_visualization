@@ -12,10 +12,10 @@ class RrnaSVG extends React.Component{
         var gene = this.props.gene;
         if(gene=="MT-RNR1"){
             return(
-                <div style={{position:'relative'}}>
-                    
-                    <Rrna1Zoom variant={variant} />
-                    <Rrna1Orig variant={variant}/>
+                <div style={{position:'relative'}}>  
+                    <Rrna1Zoom variant={variant} /> {/*render zoomed in picture*/}
+                    <Rrna1Orig variant={variant}/> {/*render original picture*/}
+                    {/*add border rectangle*/}
                     <svg height="900" width="500" style={{position: "absolute", left:'0', top:'0'}} xmlns="http://www.w3.org/2000/svg">
                         <rect x="0" y="0" height="800" width="500" style={{strokeWidth:"2",stroke:"black",fill:"none"}}></rect>
                     </svg>

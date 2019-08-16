@@ -4,9 +4,9 @@ class Mtte extends React.Component{
     
     componentDidMount(){
         //set styles
-        var allLines = document.getElementsByTagName('line');
+        var allLines = document.getElementById('svg-container').getElementsByTagName('line');
         for(var t of allLines){
-            t.setAttribute('stroke',"#2975d9");
+            t.setAttribute('stroke',"#000000");
             t.setAttribute('stroke-width',"1");
             t.setAttribute('stroke-linecap',"round");
             var newY1 = parseFloat(t.getAttribute('y1'))+47;
@@ -14,13 +14,13 @@ class Mtte extends React.Component{
             t.setAttribute('y1',newY1);
             t.setAttribute('y2',newY2);
         }
-        var allCircles = document.getElementsByTagName('circle');
+        var allCircles = document.getElementById('svg-container').getElementsByTagName('circle');
         for(var t of allCircles){
-            t.setAttribute('fill', '#b30000');
+            t.setAttribute('fill', '#000000');
             var newY = parseFloat(t.getAttribute('cy'))+47;
             t.setAttribute('cy',newY);
         }
-        var allText = document.getElementsByTagName('text');
+        var allText = document.getElementById('svg-container').getElementsByTagName('text');
         for(var t of allText){
             t.setAttribute('font-size', '12');
             t.setAttribute('fill', '#000000');
@@ -28,6 +28,7 @@ class Mtte extends React.Component{
             var newY = parseFloat(t.getAttribute('y'))+47;
             t.setAttribute('y',newY);
         }
+
         
         //highlight variant
         var variant = this.props.variant;
