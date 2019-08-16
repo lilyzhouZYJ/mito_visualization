@@ -63,12 +63,6 @@ class GeneTool extends React.Component{
         };
     }
 
-    // componentDidMount(){
-    //     this.setState({
-
-    //     })
-    // }
-
     componentDidUpdate(){
 
         //console.log("add color?"+this.state.isLoggedIn);
