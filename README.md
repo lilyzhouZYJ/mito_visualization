@@ -37,7 +37,6 @@ You will also see any lint errors in the console.
 ### [/src/components](https://github.com/lilyzhouZYJ/mito_browser/tree/master/src/components)
 - [Navbar.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/Navbar.js), navigation bar that controls the rendering of the following components
 - [Home.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/Home.js), home page and also landing page for the app
-- [RnaPage.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/RnaPage.js), an interactive tool that allows users to input either a tRNA gene name (rRNA currently not implemented) or a variant (as MT-[coordinate]) to show visualization.
 - [GeneTool.js](https://github.com/lilyzhouZYJ/mito_browser/blob/master/src/components/GeneTool.js), a visualization tool for mitochondrial DNA. Allows for 3 types of user input:
   - Mitochondrial gene name
   - Genetic variant
