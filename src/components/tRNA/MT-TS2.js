@@ -57,42 +57,44 @@ class Mtts2 extends React.Component{
 
         //add text legend
         var geneName = document.createTextNode(this.props.gene);
-        var variantId = document.createTextNode(this.props.variantId);
-        var conseq = document.createTextNode(this.props.conseq);
-
-        var geneNameNode = document.createElementNS('http://www.w3.org/2000/svg','text');
-        var variantIdNode = document.createElementNS('http://www.w3.org/2000/svg','text');
-        var conseqNode = document.createElementNS('http://www.w3.org/2000/svg','text');
-
-        geneNameNode.appendChild(geneName);
-        variantIdNode.appendChild(variantId);
-        conseqNode.appendChild(conseq);
 
         var textX = 55;
         var textY = 59;
-
+        
+        var geneNameNode = document.createElementNS('http://www.w3.org/2000/svg','text');
+        geneNameNode.appendChild(geneName);
         geneNameNode.setAttribute("x",textX);
         geneNameNode.setAttribute("y",textY);
         geneNameNode.setAttribute("text-anchor","start");
         geneNameNode.setAttribute("font-family","Roboto, sans-serif");
         geneNameNode.setAttribute("font-size","14");
 
-        variantIdNode.setAttribute("x",textX);
-        variantIdNode.setAttribute("y",textY+20);
-        variantIdNode.setAttribute("text-anchor","start");
-        variantIdNode.setAttribute("font-family","Roboto, sans-serif");
-        variantIdNode.setAttribute("font-size","14");
-
-        conseqNode.setAttribute("x",textX);
-        conseqNode.setAttribute("y",textY+40);
-        conseqNode.setAttribute("text-anchor","start");
-        conseqNode.setAttribute("font-family","Roboto, sans-serif");
-        conseqNode.setAttribute("font-size","14");
-
         var svgnode = document.getElementById("svg-container"); 
         svgnode.appendChild(geneNameNode);
-        svgnode.appendChild(variantIdNode);
-        svgnode.appendChild(conseqNode);
+        
+        if(this.props.variantId!==undefined){
+            var variantId = document.createTextNode(this.props.variantId);
+            var variantIdNode = document.createElementNS('http://www.w3.org/2000/svg','text');
+            variantIdNode.appendChild(variantId);
+            variantIdNode.setAttribute("x",textX);
+            variantIdNode.setAttribute("y",textY+20);
+            variantIdNode.setAttribute("text-anchor","start");
+            variantIdNode.setAttribute("font-family","Roboto, sans-serif");
+            variantIdNode.setAttribute("font-size","14");
+            svgnode.appendChild(variantIdNode);
+        }
+
+        if(this.props.conseq!==undefined){
+            var conseq = document.createTextNode(this.props.conseq);
+            var conseqNode = document.createElementNS('http://www.w3.org/2000/svg','text');  
+            conseqNode.appendChild(conseq);
+            conseqNode.setAttribute("x",textX);
+            conseqNode.setAttribute("y",textY+40);
+            conseqNode.setAttribute("text-anchor","start");
+            conseqNode.setAttribute("font-family","Roboto, sans-serif");
+            conseqNode.setAttribute("font-size","14");
+            svgnode.appendChild(conseqNode);
+        }
 
         var legend = document.createTextNode("tRNA Secondary Structure");
         var legendNode = document.createElementNS('http://www.w3.org/2000/svg','text');
